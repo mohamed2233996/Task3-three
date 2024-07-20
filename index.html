@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Three</title>
+</head>
+<body style="font-size: 20px; text-align: center;">
+    <script>
+
+        // 1////////
+        function sumArray() {
+            var array = [1, 2, 3, 4, 5];
+            var sum = 0;
+            
+            for (var i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            
+            document.write("The sum of the elements in the array is: " + sum);
+        }
+        
+        sumArray();
+
+        // 2////////
+        function findMax() {
+            var array = [1, 2, 3, 4, 5];
+            var max = array[0];
+            
+            for (var i = 1; i < array.length; i++) {
+                if (array[i] > max) {
+                    max = array[i];
+                }
+            }
+            
+            document.write("<br>The maximum element in the array is: " + max);
+        }
+        
+        findMax();
+        
+        // 3////////
+        function reverseText() {
+            var text = "Hello Medo";
+            var reversedText = text.split("").reverse().join("");
+            
+            document.write("<br>The reversed text is: " + reversedText);
+        }
+        
+        reverseText();
+        
+        // 4////////\
+        function removeDuplicates() {
+            var array = [1, 2, 2, 3, 3, 3, 4, 4, 4, 4];
+            var uniqueArray = [];
+            
+            for (var i = 0; i < array.length; i++) {
+                if (!uniqueArray.includes(array[i])) {
+                    uniqueArray.push(array[i]);
+                }
+            }
+            
+            document.write("<br>The array with duplicates removed is: " + uniqueArray);
+        }
+        
+        removeDuplicates();
+    </script>
+</body>
+</html>
